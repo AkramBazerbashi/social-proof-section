@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Spartan">
 
     <title>Frontend Mentor | Social proof section</title>
 
@@ -23,33 +24,257 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      body{
+        background-image: url(images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+      }
+      * {
+        box-sizing: border-box;
+        font-family: Spartan;
+        font-size: 15px;
+      }
+      .container {
+        width: 80%;
+        height: 90%;
+        margin: 50px auto;
+      }
+      .up{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 230px;
+        margin-bottom: 80px;
+      }
+      .upLeft{
+        width: 35%;
+      }
+      .upLeft p:first-of-type{
+        font-weight: 700;
+        font-size: 50px;
+        margin: 0px;
+        color: hsl(300, 43%, 22%);
+      }
+      .upLeft p:last-of-type{
+        color: hsl(303, 10%, 53%);
+      }
+      .upRight{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+      }
+
+      .upRight div{
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .upRight div p{
+        display: inline;
+        color: hsl(300, 43%, 22%);
+        text-indent: 15px;
+        
+      }
+      .upRight div img{
+        width: 17px;
+        height: 16px;
+      }
+      .upRight div:first-of-type{
+        align-self: flex-start;
+      }
+      .upRight div:nth-of-type(2){
+        align-self: center;
+      }
+      .upRight div:last-of-type{
+        align-self: flex-end;
+      }
+      .star {
+        display: inline;
+        margin: 5px;
+      }
+      .down{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .down > div{
+        border-radius: 8px;
+        background-color: hsl(300, 43%, 22%);
+        width: 32%;
+        padding: 20px;
+        
+
+      }
+      .downLeft{
+        align-self: flex-start;
+      }
+      .downMiddle{
+        align-self: center;
+      }
+      .downRight{
+        align-self: flex-end;
+      }
+      .down > div > div{
+        display: flex;
+        align-items: center;
+      }
+      .down > div > div img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .down > div > div div P:first-of-type{
+        text-indent: 20px;
+        margin-bottom: 8px;
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+      }
+      .down > div > div div P:last-of-type{
+        text-indent: 20px;
+        margin-top: 8px;
+        color: hsl(333, 80%, 67%);
+        font-weight: 400;
+      }
+      .down > div > p{
+        color: hsl(0, 0%, 100%);
+      }
+      
+      @media (max-width: 375px) {
+        .up{
+          flex-direction: column;
+          height: 450px;
+          margin-bottom: 0px;
+        }
+        .upLeft{
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .upLeft p:first-of-type{
+          font-size: 30px;
+          text-align: center;
+        }
+        .upLeft p:last-of-type{
+          text-align: center;
+        }
+        .upRight{
+          width: 100%;
+          
+        }
+        .upRight div{
+          display: block;
+          text-align: center;
+          width: 100%;
+          margin: auto;
+          margin-bottom: 20px;
+          padding-top: 10px;
+        }
+        .upRight div p{
+          display: block;
+          text-indent: 0px;
+          text-align: center;
+        }
+        .down{
+          flex-direction: column;
+          height: 700px;
+          margin-top: 50px;
+        }
+        .upRight div:first-of-type{
+          align-self: center;
+        }
+        .upRight div:nth-of-type(2){
+          align-self: center;
+        }
+        .upRight div:last-of-type{
+          align-self: center;
+        }
+        .down > div{
+          width: 100%;
+        }
+      }
+
     </style>
   </head>
   <body>
-    10,000+ of our users love our products.
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+    <div class="container">
+      <div class="up">
+        <div class="upLeft">
+          <P>10,000+ of our users love our products.</P>
+          <P>We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</P>
+        </div>
+        <div class="upRight">
+          <div>
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <p>Rated 5 Stars in Reviews</p>
+          </div>
+          <div>
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+          <div>
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <img class="star" src="images\icon-star.svg">
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </div>
+          
+      <div class="down">
+        <div class="downLeft">
+          <div>
+            <img src="images\image-colton.jpg">
+            <div>
+              <p>Colton Smith</p>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p>"We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+        </div>
+        <div class="downMiddle">
+          <div>
+            <img src="images\image-irene.jpg">
+            <div>
+              <p>Irene Roberts</p>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p>"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+        <div class="downRight">
+          <div>
+            <img src="images\image-anne.jpg">
+            <div>
+              <p>Anne Wallace</p>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p>"Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </div>
+    </div>
+
 
     <div class="attribution">
       Challenge by
